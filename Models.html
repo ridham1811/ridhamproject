@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(0, 0, 0);
+        }
+         .cars {
+            display: grid;           
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1rem;
+            padding: 2rem;
+        }
+        .car-card {
+            
+            border: 3px solid #000000;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .car-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .car-card h2 {
+            font-size: 1.5rem;
+            margin: 1rem;
+            color: white;
+        }
+        .car-card p {
+            margin: 0 1rem 1rem;
+            color: #ddd;
+        }
+        .car-card button {
+            margin: 1rem;
+            padding: 0.5rem 1rem;
+            background: black;
+            color: rgb(255, 255, 255);
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        .car-card button:hover {
+            background: #555;
+        }
+        .car-card:hover{
+            transform: scale(1.05);
+            border: black;
+        }
+        .backimg{
+            z-index: -1;
+            height: auto;
+            width: 100%;
+            position: absolute;
+        }
+        .video-background{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+       
+    </style>
+</head>
+<body>
+    <video class="video-background" autoplay loop muted>
+        <source src="lambonew2.mp4" type="video/mp4">
+    </video>
+    
+    <section id="models" class="cars">
+        <div class="car-card">
+            <img src="lamborghini huracan.jpg" alt="Lamborghini Huracan">
+            <h2>Lamborghini Huracan</h2>
+            <p>Starting at $200,000</p>
+            <button>View Details</button>
+        </div>
+        <div class="car-card">
+            <img src="lamborghini avendator.jpg" alt="Lamborghini Aventador">
+            <h2>Lamborghini Aventador</h2>
+            <p>Starting at $500,000</p>
+            <button>View Details</button>
+        </div>
+        <div class="car-card">
+            <img src="lamborghini urus.jpg" alt="Lamborghini Urus">
+            <h2>Lamborghini Urus</h2>
+            <p>Starting at $220,000</p>
+            <button>View Details</button>
+        </div>
+        </div>
+        <div class="car-card">
+            <img src="lamborghini revuelto.webp" alt="Lamborghini revuelto">
+            <h2>Lamborghini revuelto</h2>
+            <p>Starting at $608,358</p>
+            <button>View Details</button>
+        </div>
+        </div>
+        <div class="car-card">
+            <img src="lamborghini huracan evo temerario.webp" alt="Lamborghini Temerario">
+            <h2>Lamborghini Temerario</h2>
+            <p>Starting at  $350,000</p>
+            <button>View Details</button>
+        </div>
+        </div>
+        <div class="car-card">
+            <img src="lamborghini gallardo.jpg" alt="Lamborghini Gallardo">
+            <h2>Lamborghini Gallardo</h2>
+            <p>Starting at $123,827.30</p>
+            <button>View Details</button>
+        </div>
+    </section>  
+    <footer>
+        <a style="color:#ddd; font-size: larger; text-align: end;" href="project.html">back to home</a>
+    </footer>
+</body>
+</html>
